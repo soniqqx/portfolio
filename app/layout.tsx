@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { siteConfig } from "../data/siteConfig";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,7 @@ export default function RootLayout({
               <li><Link href="/#projects">Projects</Link></li>
             </ul>
           </div>
-          <Link href="mailto:supasitapcw@gmail.com" className="talk-btn">Contact</Link>
+          <Link href={`mailto:${siteConfig.email}`} className="talk-btn">Contact</Link>
         </nav>
 
         <main className="page-container">
