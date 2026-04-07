@@ -47,7 +47,7 @@ export const projectsData: Project[] = [
       "นำข้อมูลมาประมวลผลและแสดงผลในรูปแบบ Stacked Bar Chart",
       "ใช้ D3.js สำหรับสร้าง Data Visualization เพื่อแสดงสัดส่วนของนักศึกษาที่ผ่านและไม่ผ่านเกณฑ์ในแต่ละชั้นปี"],
     gallery: ["/skillmap2.png", "/skillmap3.png", "/skillmap5.png"],
-    githubUrl: "https://github.com/SahaphapM/faculty_course_frontend.git"
+    // githubUrl: "https://github.com/SahaphapM/faculty_course_frontend.git"
   },
   {
     id: "maiun",
