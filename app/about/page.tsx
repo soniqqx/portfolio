@@ -1,18 +1,10 @@
 export default function About() {
   return (
     <section id="about" className="animate-fade-in page-section">
-      <h2>About Me</h2>
-      <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-        <p>
-          I am a passionate software developer with a strong foundation in modern web technologies. 
-          My journey started with a curiosity for how things work on the internet, which quickly turned into a career shaping digital experiences.
-        </p>
-        <br/>
-        <p>
-          I specialize in building full-stack applications with a focus on clean, scalable code and intuitive user interfaces.
-          When I'm not coding, I enjoy exploring new tools, contributing to open-source communities, and continuously learning to improve my craft.
-        </p>
-      </div>
+      <h2 className="section-title">About Me</h2>
+      <p style={{ textAlign: 'center', color: 'var(--text-secondary)', maxWidth: '800px', marginBottom: '2rem' }}>
+        I am a software developer with experience developing web applications during a 4-month internship. I worked with technologies such as Next.js, Node.js, and Express.js to build CRUD features and REST APIs. I also collaborated with the team using an Agile sprint workflow and participated in fixing system defects and improving existing features. I enjoy learning new technologies and building systems that solve real-world problems.
+      </p>
     </section>
   );
 }

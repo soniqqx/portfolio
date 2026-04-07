@@ -6,8 +6,8 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "A showcase of my projects and the tools I use.",
+  title: "Supasita Portfolio",
+  description: "Front-End Developer & Designer",
 };
 
 export default function RootLayout({
@@ -19,23 +19,24 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <nav className="navbar">
-          <div className="logo">
-            <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>Portfolio.</Link>
+          <Link href="/" className="logo">sp</Link>
+          <div className="nav-links-container">
+            <ul className="nav-links">
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/#about">About</Link></li>
+              <li><Link href="/#skills">Skills</Link></li>
+              <li><Link href="/#projects">Projects</Link></li>
+            </ul>
           </div>
-          <ul className="nav-links">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/#about">About</Link></li>
-            <li><Link href="/#skills">Skills</Link></li>
-            <li><Link href="/#projects">Projects</Link></li>
-          </ul>
+          <Link href="mailto:supasitapcw@gmail.com" className="talk-btn">Contact</Link>
         </nav>
-        
+
         <main className="page-container">
           {children}
         </main>
 
         <footer>
-          <p>&copy; {new Date().getFullYear()} My Portfolio. Built with passion.</p>
+          <p>&copy; {new Date().getFullYear()} Supasita Pochawat. All Rights Reserved.</p>
         </footer>
       </body>
     </html>

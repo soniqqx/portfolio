@@ -4,22 +4,22 @@ export interface Project {
   description: string;
   gradient: string;
   tools: string[];
-  image?: string; // เพิ่มฟิลด์สำหรับรูปภาพ
-  role?: string | (string | { title: string; items: string[] })[];  // ความรับผิดชอบในโปรเจกต์ (ใส่เป็น array เพื่อแสดงเป็น bullet ได้)
-  gallery?: string[]; // รูปภาพเพิ่มเติม
-  githubUrl?: string; // ลิ้งค์ github (มีหรือไม่มีก็ได้)
+  image?: string;
+  role?: string | (string | { title: string; items: string[] })[];
+  gallery?: string[];
+  githubUrl?: string;
 }
 
 export const projectsData: Project[] = [
   {
     id: "pharmacy",
-    title: "Phramacy Inventory Management System",
+    title: "Pharmacy Inventory Management System",
     description: "ระบบเกี่ยวกับจัดการสต็อกยาในร้านขายยา เป็นการจัดการระบบสต็อกโดยมีการนำเข้าส่งออกระหว่างสาขา การสั่งซื้อ การรับสินค้า",
     gradient: "linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%)",
     tools: ["Vue.js", "Express.js", "SQLite"],
-    image: "/phramacy1.png", // นำรูป maiun1.png ไปใส่ไว้ในโฟลเดอร์ public/ ของโปรเจกต์ (d:\portfolio\public\maiun1.png)
+    image: "/phramacy1.png",
     role: [
-      "รวบรวม Requirement และออกแบบ Database Schema",
+      "ออกแบบ Database Schema",
       "พัฒนา Backend API สำหรับการจัดการข้อมูลคลังสินค้า",
       {
         title: "พัฒนา workflow ของเอกสาร ได้แก่",
@@ -31,10 +31,9 @@ export const projectsData: Project[] = [
           "Branch Receive (BR)"
         ]
       },
-      "จัดการสถานะเอกสารและการอัปเดตปริมาณสินค้าในสต็อก",
       "เชื่อมต่อ API กับ Frontend สำหรับการทำงานของระบบ"
     ],
-    gallery: ["/phramacy2.png", "/phramacy3.png"],
+    gallery: ["/phramacy2.png", "/phramacy3.png", "/pharmacy4.png", "/pharmacy5.png"],
   },
   {
     id: "skillmapping",
@@ -47,7 +46,7 @@ export const projectsData: Project[] = [
       "เชื่อมต่อข้อมูลจาก Backend API",
       "นำข้อมูลมาประมวลผลและแสดงผลในรูปแบบ Stacked Bar Chart",
       "ใช้ D3.js สำหรับสร้าง Data Visualization เพื่อแสดงสัดส่วนของนักศึกษาที่ผ่านและไม่ผ่านเกณฑ์ในแต่ละชั้นปี"],
-    gallery: ["/skillmap2.png", "/skillmap3.png"],
+    gallery: ["/skillmap2.png", "/skillmap3.png", "/skillmap5.png"],
     githubUrl: "https://github.com/SahaphapM/faculty_course_frontend.git"
   },
   {
@@ -59,7 +58,7 @@ export const projectsData: Project[] = [
     image: "/maiun1.png",
     role: ["ร่วมออกแบบแนวคิดของเกมและวาง Storyboard กับทีม",
       "พัฒนา Game Logic ด้วย JavaScript",
-      "พัฒนาระบบควบคุมตัวละครและการโต้ตอบภายในเกม"],
+      "พัฒนาระบบการโต้ตอบภายในเกม"],
     gallery: ["/maiun2.png", "/maiun3.png", "/maiun4.png", "/maiun5.png"],
   },
   {
@@ -71,8 +70,7 @@ export const projectsData: Project[] = [
     image: "/dcoffee1.png",
     role: ["พัฒนาฟังก์ชัน จัดการข้อมูลพนักงาน (CRUD)",
       "พัฒนาฟังก์ชัน บันทึกชั่วโมงการทำงานของพนักงาน",
-      "พัฒนาฟังก์ชัน คำนวณเงินเดือนตามจำนวนชั่วโมงการทำงานและอัตราค่าจ้างต่อชั่วโมง",
-      "เชื่อมต่อข้อมูลกับระบบฐานข้อมูล"],
+      "พัฒนาฟังก์ชัน คำนวณเงินเดือนตามจำนวนชั่วโมงการทำงานและอัตราค่าจ้างต่อชั่วโมง"],
     gallery: ["/dcoffee1.png", "/dcoffee2.png"],
   }
 ];
