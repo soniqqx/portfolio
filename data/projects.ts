@@ -20,9 +20,8 @@ export const projectsData: Project[] = [
     image: "/phramacy1.png",
     role: [
       "ออกแบบ Database Schema",
-      "พัฒนา Backend API สำหรับการจัดการข้อมูลคลังสินค้า",
       {
-        title: "พัฒนา workflow ของเอกสาร ได้แก่",
+        title: "พัฒนาระบบจัดการคลังสินค้า เช่น",
         items: [
           "Purchase Order (PO)",
           "Goods Receipt (GR)",
@@ -31,7 +30,8 @@ export const projectsData: Project[] = [
           "Branch Receive (BR)"
         ]
       },
-      "เชื่อมต่อ API กับ Frontend สำหรับการทำงานของระบบ"
+      "พัฒนา Backend API สำหรับจัดการข้อมูลและเชื่อมต่อกับ Frontend",
+      "ออกแบบและพัฒนา CRUD operations สำหรับการจัดการข้อมูลในระบบ"
     ],
     gallery: ["/phramacy2.png", "/phramacy3.png", "/pharmacy4.png", "/pharmacy5.png"],
   },
